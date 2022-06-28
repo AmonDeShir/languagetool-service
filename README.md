@@ -7,5 +7,5 @@ This package is a rust binding to the [LanguageTool](https://languagetool.org) s
 ## Project stage
 Java part of the project is ready, rust part needs a functionality to ready and run the .jar file. Its functionality will be provided by kate in the [future](https://github.com/nullishamy/kate/issues/13). Therefore, current library development is frozen.
 
-## license
+## License
 Project is under LGPL 3 license
