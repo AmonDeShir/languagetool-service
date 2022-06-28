@@ -59,12 +59,16 @@ public class Service {
         .add("message", match.getMessage())
         .add("shortMessage", match.getShortMessage() == null ? "" : match.getShortMessage())
         .add("replacements", array(factory, match.getSuggestedReplacements()))
+        .add("type", match.getType().name())
         .add("ruleId", rule.getId())
         .add("ruleDescription", rule.getDescription())
         .add("ruleIssueType", rule.getLocQualityIssueType().toString())
         .add("ruleSubId", ruleSubId)
         .add("ruleUrl", rule.getUrl() == null ? "" : rule.getUrl().toString())
-        .add("ruleCategoryId", catId == null ? "" : catId.toString());
+        .add("ruleCategoryId", catId == null ? "" : catId.toString())
+        .add("ruleCategoryTabName", category.getTabName() == null ? "" : category.getTabName())
+        .add("ruleCategoryName", category.getName())
+        .add("ruleCategoryLocationName", category.getLocation().name());
 
       array.add(matchBuilder);
     }
