@@ -40,8 +40,6 @@ public class Service {
     JsonArrayBuilder array = factory.createArrayBuilder();
     
     for (RuleMatch match : rules) {
-      System.out.println("Rule!!!");
-
       Rule rule = match.getRule();
       Category category = rule.getCategory();
       CategoryId catId = category.getId();
